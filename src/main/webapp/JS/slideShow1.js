@@ -12,7 +12,7 @@
 	    function moveSlide(index) {
 	        movedIndex = index;
 	        // 슬라이드 이동거리 : 왼쪽(왼쪽 여백을 줄이겠다)으로 이동거리
-	        let moveLeft = -(1280 * index); 
+	        const moveLeft = -(1280 * index); 
 	        const slidePanel = document.getElementById('slidePanel');
 	        slidePanel.style.transition = 'left 0.5s ease-in-out';
 	        slidePanel.style.left = moveLeft + 'px';
