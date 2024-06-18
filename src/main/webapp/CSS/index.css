@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+#headerBox{ /* Header 영역 (logo , topMenu) */
+		height:60px; /* 이미지의 높이에 맞춰서 높이 지정 */
+		line-height:60px; /* 줄간격 - 수직으로 가운데 정렬 효과 */
+		padding :0;
+}
+
+#logoBox{
+		height:60px;
+		line-height:60px;
+		float:left;
+}
+
+/*             메인메뉴 고정               */
+/* 윈도우 스크롤 시 메인메뉴 고정 */
+
+.mainMenuFixed{
+		position:fixed;
+		top:0px;
+}
+
+.mainMenuShadow{
+		box-shadow:0 3px 5px 0px gray;
+			/* x / y / 블러 / 스프레이 / 색상 */
+}

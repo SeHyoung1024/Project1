@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* tabMenu.css */
+
+#tabMenuBox {
+    width: 80%;
+    height: 580px;
+    background: white;
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#tabMenu ul {
+    height: 30px; /* 메뉴 이미지의 반만 사용 */
+    padding: 0px;
+}
+
+#tabMenu ul li {
+    float: left;
+    list-style: none;
+    width: 25%;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+#tabMenu img:hover{
+		cursor:point;
+}
+
+/* 탭 선택 표시 : js파일에서 addClass()에서 사용하기 위한 클래스 선택자 */
+.selectedItem img{ /* 동적 클래스 생성 */
+		margin-top:-30px;
+}
+
+#tabContent {
+    width: 100%;
+    height: 550px;
+    margin-top: 20px;
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+}
+
+/* content내의 모든 div 숨기기 */
+#tabContent div {
+    display: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* 첫번째 div만 보이기 */
+#tabContent div:first-child {
+    display: block;
+}
+
+/* 영역 안 컨텐츠 레이아웃 */
+#tabContent img {
+    width: 90%;
+    border: solid 1px #cccccc;
+}
+
+
+
+
